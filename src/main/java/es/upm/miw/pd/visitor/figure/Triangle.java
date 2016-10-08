@@ -1,29 +1,27 @@
 package es.upm.miw.pd.visitor.figure;
 
-public class Triangle extends Figure {
-    private double base;
+public class Triangle implements Figure {
+	private double base;
 
-    private double height;
+	private double height;
 
-    public Triangle(String description, double base, double height) {
-        super(description);
-        this.base = base;
-        this.height = height;
-    }
+	public Triangle(double base, double height) {
+		this.base = base;
+		this.height = height;
+	}
 
-    @Override
-    public double area() {
-        return base * height * 0.5;
-    }
+	public double getBase() {
+		return this.base;
+	}
 
-    @Override
-    public double numberOfSides() {
-        return 3;
-    }
+	public double getHeight() {
+		return this.height;
+	}
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+	@Override
+	public void aceptar(Visitor visitor) {
+		// TODO Auto-generated method stub
+
+	}
 
 }

@@ -1,27 +1,20 @@
 package es.upm.miw.pd.visitor.figure;
 
-public class Square extends Figure {
+public class Square implements Figure {
 
-    private double side;
+	private double side;
 
-    public Square(String description, double side) {
-        super(description);
-        this.side = side;
-    }
+	public Square(double side) {
+		this.side = side;
+	}
 
-    @Override
-    public double area() {
-        return side * side;
-    }
+	public double getSide() {
+		return this.side;
+	}
 
-    @Override
-    public double numberOfSides() {
-        return 4;
-    }
-
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+	@Override
+	public void aceptar(Visitor visitor) {
+		visitor.visitElementSquare(this);
+	}
 
 }
