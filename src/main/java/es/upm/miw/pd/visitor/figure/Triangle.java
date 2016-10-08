@@ -20,8 +20,7 @@ public class Triangle implements Figure {
 
 	@Override
 	public void aceptar(Visitor visitor) {
-		// TODO Auto-generated method stub
-
+		visitor.visitElementTriangle(this);
 	}
 
 }

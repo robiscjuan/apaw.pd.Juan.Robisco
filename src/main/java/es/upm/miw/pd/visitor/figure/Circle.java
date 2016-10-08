@@ -4,7 +4,7 @@ public class Circle implements Figure {
 
 	private double radius;
 
-	public Circle(String description, double radius) {
+	public Circle(double radius) {
 		this.radius = radius;
 	}
 
@@ -14,7 +14,7 @@ public class Circle implements Figure {
 
 	@Override
 	public void aceptar(Visitor visitor) {
-		// TODO Auto-generated method stub
+		visitor.visitElementCircle(this);
 
 	}
 
