@@ -1,10 +1,6 @@
 package es.upm.miw.pd.visitor.figure;
 
 import static org.junit.Assert.assertEquals;
-
-import java.util.ArrayList;
-import java.util.Collection;
-
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,7 +9,6 @@ import es.upm.miw.pd.visitor.figure.Triangle;
 import es.upm.miw.pd.visitor.figure.Circle;
 
 public class VisitorTest {
-	private Collection<Figure> coleccion = new ArrayList<Figure>();
 	private FiguresManager manager = new FiguresManager();
 	private FiguresManager manager2 = new FiguresManager();
 
@@ -30,6 +25,7 @@ public class VisitorTest {
 	@Test
 	public void testVisitorArea() {
 		assertEquals(45.27, manager.totalArea(), 0.01);
+		assertEquals(13, manager2.totalArea(), 0.01);
 	}
 
 	@Test
