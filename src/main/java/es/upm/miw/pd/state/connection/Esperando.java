@@ -2,9 +2,9 @@ package es.upm.miw.pd.state.connection;
 
 public class Esperando extends EstadoAbstracto {
 
-	@Override
-	public Estado getEstado() {
-		return Estado.ESPERANDO;
+	public Esperando() {
+		super();
+		this.estado = Estado.ESPERANDO;
 	}
 
 	@Override

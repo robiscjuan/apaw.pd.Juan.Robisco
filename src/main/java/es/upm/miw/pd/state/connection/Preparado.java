@@ -2,9 +2,9 @@ package es.upm.miw.pd.state.connection;
 
 public class Preparado extends EstadoAbstracto {
 
-	@Override
-	public Estado getEstado() {
-		return Estado.PREPARADO;
+	public Preparado() {
+		super();
+		this.estado = Estado.PREPARADO;
 	}
 
 	@Override

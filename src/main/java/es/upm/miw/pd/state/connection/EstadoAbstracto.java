@@ -2,7 +2,11 @@ package es.upm.miw.pd.state.connection;
 
 public abstract class EstadoAbstracto {
 
-	public abstract Estado getEstado();
+	protected Estado estado;
+	
+	public Estado getEstado(){
+		return this.estado;
+	};
 
 	public abstract void abrir(Conexion conexion);
 
