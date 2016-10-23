@@ -2,9 +2,9 @@ package es.upm.miw.pd.state.connection;
 
 public class Cerrado extends EstadoAbstracto {
 
-	@Override
-	public Estado getEstado() {
-		return Estado.CERRADO;
+	public Cerrado() {
+		super();
+		this.estado = Estado.CERRADO;
 	}
 
 	@Override

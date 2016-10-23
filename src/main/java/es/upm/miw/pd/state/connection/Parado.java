@@ -2,9 +2,9 @@ package es.upm.miw.pd.state.connection;
 
 public class Parado extends EstadoAbstracto {
 
-	@Override
-	public Estado getEstado() {
-		return Estado.PARADO;
+	public Parado() {
+		super();
+		this.estado = Estado.PARADO;
 	}
 
 	@Override
