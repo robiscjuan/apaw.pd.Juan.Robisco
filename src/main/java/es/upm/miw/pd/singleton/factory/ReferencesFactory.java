@@ -9,7 +9,7 @@ public class ReferencesFactory {
 	private Map<String, Integer> references;
 	private int reference;
 
-	private ReferencesFactory() {
+	ReferencesFactory() {
 		this.references = new HashMap<>();
 		this.reference = 0;
 	}

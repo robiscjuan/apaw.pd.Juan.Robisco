@@ -4,9 +4,10 @@ import upm.jbb.IO;
 
 public class MainCalculator {
 	private CommandManager commandManager;
+	private Calculator calculator;
 
 	public MainCalculator() {
-		Calculator calculator = new Calculator();
+		this.calculator = new Calculator();
 		this.commandManager = new CommandManager();
 		this.commandManager.add(new AddCommand(calculator));
 		this.commandManager.add(new SubtractCommand(calculator));

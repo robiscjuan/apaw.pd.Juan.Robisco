@@ -1,12 +1,9 @@
 package es.upm.miw.pd.visitor.figure;
 
 import static org.junit.Assert.assertEquals;
+
 import org.junit.Before;
 import org.junit.Test;
-
-import es.upm.miw.pd.visitor.figure.Square;
-import es.upm.miw.pd.visitor.figure.Triangle;
-import es.upm.miw.pd.visitor.figure.Circle;
 
 public class VisitorTest {
 	private FiguresManager manager = new FiguresManager();

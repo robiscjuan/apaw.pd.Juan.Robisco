@@ -1,4 +1,4 @@
-package es.upm.miw.pd.text.solution;
+package es.upm.miw.pd.text;
 
 public abstract class Componente {
 

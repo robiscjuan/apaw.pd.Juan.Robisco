@@ -1,4 +1,4 @@
-package es.upm.miw.pd.text.solution;
+package es.upm.miw.pd.text;
 
 import java.util.ArrayList;
 import java.util.List;

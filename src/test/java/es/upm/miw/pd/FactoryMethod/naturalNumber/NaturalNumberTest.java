@@ -1,9 +1,14 @@
 package es.upm.miw.pd.FactoryMethod.naturalNumber;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
-import es.upm.miw.pd.factoryMethod.naturalNumber.*;
+import es.upm.miw.pd.factoryMethod.naturalNumber.NaturalNumber;
+import es.upm.miw.pd.factoryMethod.naturalNumber.NaturalNumberCreator;
+import es.upm.miw.pd.factoryMethod.naturalNumber.NaturalNumberEnCreator;
+import es.upm.miw.pd.factoryMethod.naturalNumber.NaturalNumberEsCreator;
+import es.upm.miw.pd.factoryMethod.naturalNumber.NaturalNumberFrCreator;
 
 public class NaturalNumberTest {
 	private NaturalNumber naturalNumber;
