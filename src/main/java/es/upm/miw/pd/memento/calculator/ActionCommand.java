@@ -1,15 +1,20 @@
 package es.upm.miw.pd.memento.calculator;
 
 import upm.jbb.IO;
+import es.upm.miw.pd.command.calculator.Comando;
 
 public abstract class ActionCommand implements Comando {
 
-	protected Calculator calculator;
+	protected CalculadoraMementable calculadoraMementable;
+
+	protected MementoManager<MementoCalculadora> mementoManager;
 
 	protected IO io;
 
-	public ActionCommand(Calculator calculator) {
-		this.calculator = calculator;
+	public ActionCommand(CalculadoraMementable calculadoraMementable,
+			MementoManager<MementoCalculadora> mementoManager) {
+		this.calculadoraMementable = calculadoraMementable;
+		this.mementoManager = mementoManager;
 		this.io = IO.getIO();
 	}
 
